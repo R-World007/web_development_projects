@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        div{
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+            margin-right: 200px;
+            margin-top: 30px;
+        }
+
+        .d1 .t1{
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+            position: absolute;
+            z-index: 1;
+        }
+
+        .d1:hover .t1{visibility: visible;}
+
+        .d2 .t2{
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+            position: absolute;
+            z-index: 1;
+            top: -5px;
+            left: 105%
+    
+        }
+
+        .d2:hover .t2{visibility: visible;}
+
+        .d3 .t3{
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+            position: absolute;
+            z-index: 1;
+            top: -5px;
+            right: 105%
+    
+        }
+        .d3:hover .t3{visibility: visible;}
+
+
+        .d4 .t4{
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -60px;
+    
+        }
+
+        .d4:hover .t4{visibility: visible;}
+
+        .d5 .t5{
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+            position: absolute;
+            z-index: 1;
+            top: 100%;
+            left: 50%;
+            margin-left: -60px;
+    
+        }
+
+        .d5:hover .t5{visibility: visible;}
+
+        .d6 .t6{
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+            position: absolute;
+            z-index: 1;
+            bottom: 150%;
+            left: 50%;
+            margin-left: -60px;
+    
+        }
+
+        .d6 .t6::after{
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: black transparent transparent transparent;
+        }
+
+        .d6:hover .t6{visibility: visible;}
+
+        .d7 .t7{
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+            position: absolute;
+            z-index: 1;
+            top: -5px;
+            left: 110%;
+    
+        }
+
+        .d7 .t7::after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent black transparent transparent;
+        }
+
+        .d7:hover .t7{visibility: visible;}
+
+        .d8 .t8{
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+            position: absolute;
+            z-index: 1;
+            top: -5px;
+            right: 110%;
+    
+        }
+
+        .d8 .t8::after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent transparent black;
+        }
+
+        .d8:hover .t8{visibility: visible;}
+
+
+    </style>
+
+</head>
+<body style="text-align: center;">
+    <div class="d1">Basic1<span class="t1">tooltip text1</span></div>
+    <div class="d2">Basic2<span class="t2">tooltip text2</span></div>
+    <div class="d3">Basic3<span class="t3">tooltip text3</span></div>
+    <div class="d4">Basic4<span class="t4">tooltip text4</span></div>
+    <div class="d5">Basic5<span class="t5">tooltip text5</span></div>
+    <div class="d6">Basic6<span class="t6">tooltip text6</span></div>
+    <div class="d7">Basic7<span class="t7">tooltip text7</span></div>
+    <div class="d8">Basic8<span class="t8">tooltip text8</span></div>
+    <div class="d9">Basic9<span class="t9">tooltip text9</span></div>
+    <div class="d10">Basic10<span class="t10">tooltip text10</span></div>
+</body>
+</html>

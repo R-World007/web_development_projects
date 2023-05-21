@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div{
+width: 50px;
+height: 50px;
+background: red;
+margin-bottom:20px;
+}
+
+div.d1{
+transition: width 2s;
+transition-delay: 2s;
+}
+div.d1:hover{
+width:300px;
+}
+
+div.d2{
+transition: width 2s, height 4s;
+}
+div.d2:hover{
+width:300px;
+height:300px;
+
+}
+
+div.d3{
+transition: width 2s;
+transition-timing-function: linear;
+}
+
+div.d4{
+transition: width 2s;
+transition-timing-function: ease;
+}
+
+div.d5{
+transition: width 2s;
+transition-timing-function: ease-in;
+}
+
+div.d6{
+transition: width 2s;
+transition-timing-function: ease-out;
+}
+
+div.d7{
+transition: width 2s;
+transition-timing-function: ease-in-out;
+}
+
+div.d3:hover{
+width:300px;
+}
+
+div.d4:hover{
+width:300px;
+}
+
+div.d5:hover{
+width:300px;
+}
+
+div.d6:hover{
+width:300px;
+}
+
+div.d7:hover{
+width:300px;
+}
+
+div.d8{
+transition: width 2s, height 2s, transform 2s;
+}
+div.d8:hover{
+width:300px;
+height:300px;
+background: yellow;
+transform: rotate(360deg);
+}
+
+div.d9{
+background:red;
+transition-property: width;
+transition-duration: 2s;
+transition-timing-funtion: linear;
+transition-delay: 1s;
+}
+
+div.d9:hover{
+width: 300px;
+}
+
+div.d10{
+transition: width 2s linear 1s;
+}
+
+div.d10:hover{
+width:300px;
+}
+</style>
+</head>
+<body>
+<div class="d1">hello</div>
+<div class="d2">hello</div>
+
+<div class="d3">linear</div>
+<div class="d4">ease</div>
+<div class="d5">ease-in</div>
+<div class="d6">ease-out</div>
+<div class="d7">ease-in-out</div>
+
+<div class="d8">transition+transform</div>
+
+<div class="d9">Hello</div>
+
+<div class="d10">Hello</div>
+</body>
+</html>

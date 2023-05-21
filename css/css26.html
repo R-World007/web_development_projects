@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .bg{
+
+                background-image: url(7.jpg), url(6.jpg);
+                background-position: right bottom, left top;
+                background-repeat: no-repeat, repeat;
+                padding: 15px;}
+            .bg1{
+                background: url(7.jpg) right bottom no-repeat, url(6.jpg) left top repeat;
+                padding: 15px;}
+            .bg2{
+                background-image: url(7.jpg);
+                background-size: 200px 200px;
+                background-repeat: no-repeat;
+            }
+            .bg3 {
+                background: url(7.jpg);
+                border: 1px solid black;
+                height: 120px;
+                width: 150px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-bottom:10px ;
+            }
+                
+
+            .bg4 {
+                background: url(7.jpg);
+                border: 1px solid black;
+                height: 120px;
+                width: 150px;
+                background-size: cover;
+                background-repeat: no-repeat;}
+            .bg5{
+                background: url(10.png) left top no-repeat, url(9.gif) right bottom no-repeat, url(6.jpg) left top repeat;
+                padding: 15px;
+                background-size: 50px, 130px, auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bg">
+            <h1>Hi</h1>
+            <p>welcome and nice to meet you!</p>
+        </div>
+        <div class="bg1">
+            <h1>Hi</h1>
+            <p>welcome and nice to meet you!</p>
+        </div>
+        <div class="bg2">
+            <h1>Hi</h1>
+            <p>welcome and nice to meet you!</p>
+        </div>
+        <div class="bg3">
+            <p>welcome and nice to meet you!</p>
+        </div>
+        <div class="bg4">
+            <p>welcome and nice to meet you!</p>
+        </div>
+        <div class="bg5">
+            <h1>Hi</h1>
+            <p>welcome and nice to meet you!</p>
+        </div>
+    </body>
+</html>

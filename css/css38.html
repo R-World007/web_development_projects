@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #id1{
+                height: 200px;
+                background-color: red;/* for browsers that do not support gradients */
+                background-image: linear-gradient(red,yellow);
+                margin-bottom: 20px;
+            }
+            #id2{
+                height: 200px;
+                background-color: red;/* for browsers that do not support gradients */
+                background-image: linear-gradient(to right,red,yellow);
+                margin-bottom: 20px;
+            }  
+            #id3{
+                height: 200px;
+                background-color: red;/* for browsers that do not support gradients */
+                background-image: linear-gradient(to bottom,red,yellow);
+                margin-bottom: 20px;
+            }
+            #id4{
+                height: 200px;
+                background-image: linear-gradient(180deg, red, yellow);
+                margin-bottom: 20px;
+            }
+            #id5{
+                height: 200px;
+                background-image: linear-gradient(red, yellow, green);
+
+                margin-bottom: 20px;
+            }
+            #id6{
+                height: 200px;
+                background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+                margin-bottom: 20px;
+            }
+            #id7{
+                height: 200px;
+                background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+                margin-bottom: 20px;
+            }   
+            #id8{
+                height: 200px;
+                background-image: repeating-linear-gradient(red,yellow 10%, green 20%);
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div id="id1"> top to bottom(default)</div>
+        <div id="id2"> left to right</div>
+        <div id="id3"> top left to bottom</div>
+        <div id="id4">180 deg</div>
+        <div id="id5"> multiple color</div>
+        <div id="id6"> rainbow background</div>
+        <div id="id7">transparent</div>
+        <div id="id8">repeating</div>
+
+    </body>
+</html>

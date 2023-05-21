@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+	div{
+		width: 100px;
+    	height: 100px;
+	  	margin-bottom: 20px;
+	 	background-color: red;
+		position: relative;
+	}
+    div.d1{
+
+        background-color: red;
+        animation-name: example;
+        animation-duration: 4s;
+        }
+	div.d2{
+	    background-color: red;
+	    animation-name: d1;
+	    animation-duration: 4s;
+	}
+	
+	div.d3{
+	    background-color:red;
+	    animation-name:d3;
+	    animation-duration:4s;
+	    position: relative;
+	}
+
+	div.d4{
+		position: relative;
+		background-color: red;
+		animation-name: d4;
+		animation-duration: 4s;
+		animation-delay: 2s;
+	}
+	div.d5{		
+		position: relative;
+		background-color: red;
+		animation-name: d4;
+		animation-duration: 4s;
+		animation-delay: -2s;
+
+	}
+
+	div.d6{
+		position: relative;
+		background-color: red;
+		animation-name: d4;
+		animation-duration: 4s;
+		animation-iteration-count: 3;
+	}
+
+	div.d7{
+		position: relative;
+		background-color: red;
+		animation-name: d4;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+	}
+
+	div.d8{
+		position: relative;
+		background-color: red;
+		animation-name: d4;
+		animation-duration: 4s;
+		animation-direction: reverse;
+
+	}
+	div.d9{
+		position: relative;
+		background-color: red;
+		animation-name: d4;
+		animation-duration: 4s;
+		animation-direction: alternate;
+
+	}
+
+	div.d10{
+		position: relative;
+		background-color: red;
+		animation-name: d4;
+		animation-duration: 4s;
+		animation-direction: alternate-reverse;
+
+	}
+
+	div.d11{
+		animation-name: d11;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+
+	div.d12{
+		animation-name: d12;
+		animation-duration: 4s;
+		animation-delay: 2s;
+		animation-fill-mode: backwards;
+
+	}
+
+	div.d13{
+		animation-name: d13;
+		animation-duration: 4s;
+		animation-delay: 2s;
+		animation-fill-mode: both;
+	}
+
+	div.d14{
+		animation-name: d4;
+		animation-duration: 4s;
+		animation-timing-function: linear;
+		animation-delay: 2s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+	div.d15{
+		animation: d4 5s linear 2s infinite alternate;
+	}
+
+        @keyframes example{
+	  from{background-color:red;}
+	  to{background-color: yellow;}
+	}
+
+        @keyframes d1{
+	  0%{background-color:red;}
+	  25%{background-color: yellow;}
+	  50%{background-color: blue;}
+	  100%{background-color: green;}
+	}
+
+        @keyframes d3{
+	  0%{background-color:red; left:0px; top:0px;}
+	  25%{background-color: yellow; left:200px; top:0px;}
+	  50%{background-color: blue; left:200px; top:200px;}
+	  75%{background-color: green; left:0px; top:200px; }
+	  100%{background-color: red; left:0px; top:0px;}
+	}
+	@keyframes d4{
+	  0%{background-color:red; left:0px; top:0px;}
+	  25%{background-color: yellow; left:200px; top:0px;}
+	  50%{background-color: blue; left:200px; top:200px;}
+	  75%{background-color: green; left:0px; top:200px; }
+	  100%{background-color: red; left:0px; top:0px;}
+	}
+	@keyframes d11 {
+		from{top: 0px;}
+		to{top:300px; background-color: blue;}
+	}
+
+	@keyframes d12{
+		from{top:0px; background-color: yellow ;}
+		to{top: 200px;}
+	}
+
+	@keyframes d13{
+		from{top:0px; background-color: yellow;}
+		to{top:700px; background-color: blue;}
+	}
+
+    </style>
+
+</head>
+<body>
+    <div class="d1">d1</div>
+    <div class="d2">d2</div>
+    <div class="d3">d3</div>
+	<div class="d4">d4</div>
+	<div class="d5">d5</div>
+	<div class="d6">d6</div>
+	<div class="d7">d7</div>
+	<div class="d8">d8</div>
+	<div class="d9">d9</div>
+	<div class="d10">d10</div>
+	<div class="d11">d11</div>
+	<div class="d12">d12</div>
+	<div class="d13">d13</div>
+	<div class="d14">d14</div>
+	<div class="d15">d15</div>
+</body>
+</html>

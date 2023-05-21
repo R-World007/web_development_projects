@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.test1{
+white-space: nowrap;
+width: 200px;
+border: 1px solid #000000;
+overflow: hidden;
+text-overflow: clip;
+}
+p.test2 {
+white-space: nowrap;
+width: 200px;
+border: 1px solid #000000;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+div.test {
+white-space: nowrap; 
+width: 200px; 
+overflow: hidden; 
+border: 1px solid #000000;
+}
+div.test:hover {
+overflow: visible;
+}
+
+p.test3 {
+width: 11em;
+border: 1px solid #000000;
+word-wrap: break-word;
+}
+
+p.test4 {
+width: 140px;
+border: 1px solid #000000;
+word-wrap: keep-all;
+}
+
+p.test5 {
+width: 140px;
+border: 1px solid #000000;
+word-wrap: break-all;
+}
+
+p.test6 {
+writing-mode: horizontal-tb; 
+}
+
+p.test7 {
+writing-mode: vertical-rl;
+}
+
+p.test8 {
+writing-mode: vertical-rl;
+}
+
+
+</style>
+</head>
+<body>
+<p class="test1">This is some long text that will not fit in the box</p>
+<p class="test2">This is some long text that will not fit in the box</p>
+
+<div class="test" style="text-overflow:ellipsis;">This is some long text that will not fit in the box</div>
+<div class="test" style="text-overflow:clip;">This is some long text that will not fit in the box</div>
+
+<p class="test3">This is some long text that will not fit in the box.This is some long text that will not fit in the box.</p>
+<p class="test4">This is some long text that will not fit in the box.This is some long text that will not fit in the box.</p>
+<p class="test5">This is some long text that will not fit in the box.This is some long text that will not fit in the box.</p>
+
+<p class="test6">This is some long text that will not fit in the box.This is some long text that will not fit in the box.</p>
+<p class="test7">This is some long text that will not fit in the box.This is some long text that will not fit in the box.</p>
+<p class="test8">This is some long text that will not fit in the box.This is some long text that will not fit in the box.</p>
+
+
+</body>
+</html>

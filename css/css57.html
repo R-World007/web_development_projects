@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .d1{
+            border: 2px, solid;
+            padding: 20px;
+            width: 300px;
+            resize: horizontal;
+            overflow: scroll;
+        }
+
+        .d2{
+            border: 2px, solid;
+            padding: 20px;
+            width: 300px;
+            resize: vertical;
+            overflow: scroll;
+        }
+
+        .d3{
+            border: 2px, solid;
+            padding: 20px;
+            width: 300px;
+            resize: both;
+            overflow: scroll;
+        }
+
+        textarea#test {
+            resize: none;
+        }
+
+        div.ex1 {
+            margin: 20px;
+            border: 1px solid black;
+            outline: 4px solid red;
+            outline-offset: 15px;
+        } 
+
+        div.ex2 {
+            margin: 10px;
+            border: 1px solid black;
+            outline: 5px dashed blue;
+            outline-offset: 5px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>The resize Property</h1>
+
+    <div class="d1">
+    <p>Let the user resize only the width of this div element.</p>
+    <p>To resize: Click and drag the bottom right corner of this div element.</p>
+    </div>
+
+    <h1>The resize Property</h1>
+
+    <div class="d2">
+    <p>Let the user resize only the height of this div element.</p>
+    <p>To resize: Click and drag the bottom right corner of this div element.</p>
+    </div>
+
+    <h1>The resize Property</h1>
+
+    <div class="d3">
+    <p>Let the user resize both the height and the width of this div element.</p>
+    <p>To resize: Click and drag the bottom right corner of this div element.</p>
+    </div>
+
+    <textarea id="test">Textarea - Not resizable</textarea>
+    <br><br>
+
+    <textarea>Textarea - Resizable (default)</textarea>
+
+    <h1>The outline-offset Property</h1>
+
+    <div class="ex1">This div has a 4 pixels solid red outline 15 pixels outside the border edge.</div>
+    <br>
+
+    <div class="ex2">This div has a 5 pixels dashed blue outline 5 pixels outside the border edge.</div>
+
+
+    
+</body>
+</html>
